@@ -167,7 +167,7 @@ If you already have an agent and evaluation in place, the `docs/` directory cove
 ## Repo structure
 
 ```
-dbt-agent-trust/
+agent-trust-for-dbt/
 │
 ├── README.md
 ├── LICENSE
@@ -230,7 +230,7 @@ dbt-agent-trust/
 ```bash
 # Clone
 git clone https://github.com/datacult/dbt-agent-trust.git
-cd dbt-agent-trust
+cd agent-trust-for-dbt
 
 # Set up environment
 uv venv && source .venv/bin/activate
@@ -258,11 +258,11 @@ Connect the agent as an MCP server in Claude Desktop for conversational analytic
 {
   "mcpServers": {
     "olist-analytics": {
-      "command": "/path/to/dbt-agent-trust/.venv/bin/python",
+      "command": "/path/to/agent-trust-for-dbt/.venv/bin/python",
       "args": ["-m", "agent.custom_orchestrator.mcp_server"],
-      "cwd": "/path/to/dbt-agent-trust",
+      "cwd": "/path/to/agent-trust-for-dbt",
       "env": {
-        "PYTHONPATH": "/path/to/dbt-agent-trust"
+        "PYTHONPATH": "/path/to/agent-trust-for-dbt"
       }
     }
   }

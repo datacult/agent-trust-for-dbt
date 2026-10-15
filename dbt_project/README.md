@@ -48,7 +48,7 @@ dbt marts (fct_*, dim_*)  +  column descriptions  +  business_context.md
 
 ```bash
 git clone <repo-url>
-cd dbt-agent-trust/dbt_project      # run all dbt commands from here
+cd agent-trust-for-dbt/dbt_project      # run all dbt commands from here
 
 dbt deps      # install package dependencies
 dbt seed      # load the committed Olist CSVs into olist.duckdb
